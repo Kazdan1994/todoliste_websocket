@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Todolist</title>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/>
+	</head>
+	<body>
+	<div class="container">
+			<nav class="navbar navbar-inverse">
+				<p class="navbar-brand">Todoliste</p>
+			</nav>
+
+				<form id="todoForm">
+					<div class="form-group">
+						<div class="input-group">
+							<input type="text" class="form-control" id="tache" autofocus>
+
+							<div class="input-group-btn">
+								<button class="btn btn-primary"><span class="glyphicon glyphicon-edit"></span>  Ajouter</button>
+							</div>
+						</div>
+					</div>
+				</form>
+
+			<hr>
+				<div id="todo">
+
+				</div>
+
+	</div>
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/javascript/client.js"></script>
+</body>
+</html>
