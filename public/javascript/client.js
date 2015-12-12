@@ -24,8 +24,9 @@ $("#todoForm").submit(function(){
 
 // Supprimer une tache
 $("#todo").on("click", "button", function(){
+
 	$(this).text("");
-	var task = $(this).closest("li").text();
+	var task = $(this).closest("div").text();
 	socket.emit("deleteTask", task);
-	$(this).closest("li").remove();
+	$(this).closest("div").remove();
 });
